@@ -328,7 +328,7 @@ public class AXTouchView extends View {
             position += step;
         } while (progress > position);
 
-        if (position != progress)
+        if (position - step != progress)
             points.add(getPoint(progress));
 
         nextPoint = getPoint(progress + step);
